@@ -1,0 +1,24 @@
+<html>
+ <script>
+  function tempConv()
+  {
+     var result = document.getElementById("result");
+     // show result
+     result.style.visibility = 'visible';
+     // get Label of F     
+     var F = document.getElementById("F");
+     // get input of C
+     var c_val = document.getElementById("C").value;
+     //alert(c_val);
+     // put calculated result in F 
+     F.innerHTML = c_val * 9.0 / 5.0 + 32.0;
+     //alert(F.value);
+  }
+ </script>
+ <body>
+	<p>Temperture Conversion:</p> 
+	C:<input type="number" id="C"> <br>
+	<div id="result" style="visibility:hidden">F = <span id="F"></span> </div><br>
+	<button type="button" onclick="tempConv()">Calculate</button>
+ </body>
+</html>
